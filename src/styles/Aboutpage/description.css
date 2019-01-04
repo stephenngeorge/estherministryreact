@@ -1,0 +1,43 @@
+.description
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+  
+    background-image: url('../../assets/ro_BGPortrait.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.description > .content
+{
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .7);
+}
+  
+.description > .content > h3
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.description > .content > p
+{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    color: #3E403F;
+}
+
+.description > .content > p > img
+{
+    width: 30px;
+    height: 30px;
+}

@@ -8,5 +8,9 @@
 @import './styles/Homepage/testimonials.css';
 @import './styles/Homepage/quote.css';
 
+@import './styles/Aboutpage/description.css';
+@import './styles/Aboutpage/bibleverse.css';
+@import './styles/Aboutpage/findoutmore.css';
+@import './styles/Aboutpage/review.css';
 
 @import './styles/affiliation.css'
