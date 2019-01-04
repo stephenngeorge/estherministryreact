@@ -1,8 +1,14 @@
 .courses
 {
   width: 100%;
+
+  display: -webkit-flex;
   display: flex;
+
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   justify-content: center;
+
   padding: 30px 0;  
 }
 
@@ -10,29 +16,57 @@
 {
   width: 80%;
   max-width: 800px;
+
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;    
+
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
 }
 
 .courses-btns
 {
+  display: -webkit-flex;
   display: flex;
+
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
   justify-content: space-around;
+
   padding: 20px 0;
 }
 
 .courses-btns > button
 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  -moz-flex: 1;
   flex: 1;
+
   height: 40px;
   margin: 0 10px;
+
+  display: -webkit-flex;
   display: flex;
+
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   justify-content: center;
+
+  -webkit-align-items: center;
   align-items: center;
+
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   background-color: #fff;
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
+
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(90, 90, 90, .4);
+  -moz-box-shadow: 0px 0px 6px 2px rgba(90, 90, 90, .4);
   box-shadow: 0px 0px 6px 2px rgba(90, 90, 90, .4);
 }
 
@@ -40,7 +74,11 @@
 {
   color: #77ADA5;
   border: 2px solid #77ADA5;
-  transition: all .8s;    
+
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
 }
 #gifting-day:hover, #gifting-day:focus
 {
@@ -48,6 +86,9 @@
   background-color: #77ADA5;
   color: #3E403F;
   outline: none;
+
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
   box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
 }
 
@@ -55,6 +96,10 @@
 {
   color: #3E403F;
   border: 2px solid #3E403F;
+
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
   transition: all .8s;
 }
 #clergy-spouse:hover, #clergy-spouse:focus
@@ -63,5 +108,8 @@
   background-color: #3E403F;
   color: #77ADA5;
   outline: none;
+
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
   box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
 }

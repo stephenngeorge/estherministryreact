@@ -1,7 +1,10 @@
 .affiliation
 {
     width: 100%;
+    
     display: flex;
+    display: -webkit-flex;
+
     border-top: 1px solid black;
 }
   
@@ -9,16 +12,34 @@
 {
     width: 50%;
     height: 25%;
+
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
     flex: 1;
 }
 
 .affiliation > p
 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
     flex: 1;
+
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
+
+    -webkit-align-items: center;
     align-items: center;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+
     text-align: center;
 
     background-color: #3E403F;
@@ -31,6 +52,10 @@
 {
     text-decoration: none;
     color: #fff;
+
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
     transition: all .8s;
 }
 

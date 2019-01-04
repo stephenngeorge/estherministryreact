@@ -1,8 +1,14 @@
 .description
 {
     width: 100%;
+
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
+
     padding: 120px 0;
   
     background-image: url('../../assets/ro_BGPortrait.jpg');
@@ -16,8 +22,14 @@
 {
     width: 80%;
     max-width: 800px;
+
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+    
     padding: 30px;
     background-color: rgba(255, 255, 255, .7);
 }

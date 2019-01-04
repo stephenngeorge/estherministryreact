@@ -1,7 +1,12 @@
 .bible-verse
 {
     width: 100%;
+
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
   
     background-image: url('../../assets/bible_background.jpg');
@@ -15,9 +20,17 @@
 {
     width: 80%;
     max-width: 800px;
+
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+
+    -webkit-align-items: center;
     align-items: center;
+    
     padding: 50px;
 }
 

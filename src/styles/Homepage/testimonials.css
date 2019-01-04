@@ -1,7 +1,12 @@
 .testimonials
 {
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
+
     width: 100%;
     padding: 40px 0;  
     background-color: #77ADA5;
@@ -9,10 +14,20 @@
 
 .testimonials > .content
 {
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
+
+    -webkit-align-items: center;
     align-items: center;
+
     width: 80%;
     max-width: 800px;
 }
@@ -27,9 +42,17 @@
 
 .quotes-list
 {
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
     flex-flow: row wrap;
+
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
     justify-content: space-around;
+    
     margin-top: 40px;
 }
   

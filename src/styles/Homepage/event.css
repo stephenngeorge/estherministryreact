@@ -1,7 +1,12 @@
 .event
 {
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+
     padding: 10px 0;
 }
   
@@ -13,8 +18,13 @@
 
 .event div
 {
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
     justify-content: space-between;
+    
     color: #fff;
     font-family: 'Source Serif Pro', sans-serif;
     font-size: 18px;
