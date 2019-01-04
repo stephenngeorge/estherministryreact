@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
 
 // import Page Components
-import HomePage from './components/Pages/HomePage'
+import { HomePage } from './components/Pages'
+import { Affiliation, Navigation } from './components/Globals'
 
 class App extends Component {
   render() {
@@ -11,7 +12,17 @@ class App extends Component {
       <Router>
         <div className="App">
 
-          <Route path='/' component={ HomePage } />
+          <header>
+            <Navigation />
+          </header>
+
+          <div className='app-contents'>
+            <Route path='/' exact component={ HomePage } />
+          </div>
+
+          <footer>
+            <Affiliation />
+          </footer>
         
         </div>
       </Router>

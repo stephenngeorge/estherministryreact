@@ -1,0 +1,41 @@
+.affiliation
+{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid black;
+}
+  
+.affiliation > img
+{
+    width: 50%;
+    height: 25%;
+    flex: 1;
+}
+
+.affiliation > p
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #3E403F;
+    color: #77ADA5;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 32px;
+}
+
+.affiliation > p > a
+{
+    text-decoration: none;
+    color: #fff;
+    transition: all .8s;
+}
+
+.affiliation > p > a:hover, .affiliation > p > a:focus
+{
+    color: #77ADA5;
+    outline: none;
+}

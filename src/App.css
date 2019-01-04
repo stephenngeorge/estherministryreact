@@ -1,3 +1,5 @@
+@import './styles/navigation.css';
+
 @import './styles/Homepage/hero.css';
 @import './styles/Homepage/courses.css';
 @import './styles/Homepage/courseInfo.css';
@@ -5,3 +7,6 @@
 @import './styles/Homepage/event.css';
 @import './styles/Homepage/testimonials.css';
 @import './styles/Homepage/quote.css';
+
+
+@import './styles/affiliation.css'
