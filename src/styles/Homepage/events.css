@@ -1,0 +1,45 @@
+.upcoming-events
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #3E403F;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 800px;
+}
+.events-list
+{
+    flex: 2;
+}
+
+.upcoming-events__header
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.upcoming-events__header > h3
+{
+    color: #fff;
+    font-family: 'Stalemate', cursive;
+    font-size: 80px;
+    line-height: 95%;
+    text-align: center;
+    transform: rotate(-10deg);
+    margin-bottom: 20px;
+}
+
+.upcoming-events__header > img
+{
+    width: 100px;
+}

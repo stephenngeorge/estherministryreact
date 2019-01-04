@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Stalemate');
+
+.highlight
+{
+    color: #77ADA5;
+}
+
+.error
+{
+    min-height: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #ff9999;
+    text-transform: uppercase;
+}

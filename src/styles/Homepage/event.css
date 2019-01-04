@@ -1,0 +1,21 @@
+.event
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+  
+.event-type
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.event div
+{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 18px;
+}
