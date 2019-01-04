@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ExtendedPropTypes from 'extended-proptypes';
+import React from 'react'
+import PropTypes from 'prop-types'
+import ExtendedPropTypes from 'extended-proptypes'
 
-const Event = (props) => {
+const Event = props => {
   // construct date in correct format, rendered in '.event-date', line 13
   let dateString = `${props.date.getDate()}/${props.date.getMonth() + 1}/${props.date.getFullYear()}`;
   return (
@@ -13,7 +13,7 @@ const Event = (props) => {
         <p className='event-date'>{ dateString }</p>
       </div>
     </div>
-  );
+  )
 }
 
 Event.propTypes = {
@@ -21,6 +21,5 @@ Event.propTypes = {
   location: PropTypes.string.isRequired,
   date: ExtendedPropTypes.date.isRequired
 }
-
 
 export default Event

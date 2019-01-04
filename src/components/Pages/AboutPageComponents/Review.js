@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-const Review = () => (
+export default () => (
   <div className='review'>
     <div className='content'>
       <p>
@@ -17,7 +17,4 @@ const Review = () => (
       </p>
     </div>
   </div>
-);
-
-
-export default Review
+)

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 // import assets
 import speechmarks_grey from '../../../assets/speechmarks_grey.png'
 
-const Description = () => (
+export default () => (
   <section className='description'>
     <div className='content'>
       <h3>That <span className='highlight'>Esther Moment</span></h3>
@@ -22,7 +22,4 @@ const Description = () => (
           into action for God.</p>
     </div>
   </section>
-);
-
-
-export default Description
+)

@@ -5,20 +5,12 @@ import CourseInfo from './CourseInfo';
 
 export default class Courses extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      // set initial state
-      // gifting day button set as active
-      // this value is passed to <CourseInfo /> component
-      activeBtn: 'gifting-day'
-    }
-    // bind functions for this scope
-    this._toggleActive = this._toggleActive.bind(this);
+  state = {
+    activeBtn: 'gifting-day'
   }
 
   // function accepts event, sets active button
-  _toggleActive(e) {
+  _toggleActive = e => {
     // check if the other button (which will be either previous or next sibling) is active?
     if ((e.target.nextSibling !== null && e.target.nextSibling.classList.contains('active')) ||
         (e.target.previousSibling !== null && e.target.previousSibling.classList.contains('active'))) {

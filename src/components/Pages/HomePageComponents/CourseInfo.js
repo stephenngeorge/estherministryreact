@@ -5,8 +5,9 @@ import PropTypes from 'prop-types'
 import speechmarks_grey from '../../../assets/speechmarks_grey.png'
 
 // conditional rendering based on active button prop (passed down from Courses.js)
-const CourseInfo = (props) => {
-  if (props.active === 'gifting-day') {
+const CourseInfo = props => {
+  let { active } = props
+  if (active === 'gifting-day') {
     return (
       <div className='course-info'>
         <h3 className='course-title'>GIFTING DAY</h3>
@@ -31,7 +32,7 @@ const CourseInfo = (props) => {
       </div>
     )
   }
-  else if (props.active === 'clergy-spouse') {
+  else if (active === 'clergy-spouse') {
     return (
       <div className='course-info'>
         <h3 className='course-title'>CLERGY SPOUSE DAY</h3>
@@ -64,12 +65,10 @@ const CourseInfo = (props) => {
       </div>
     );
   }
-  else if (props.active === '') return null;
+  else if (active === '') return null;
 }
 
-CourseInfo.propTypes = {
-  active: PropTypes.string.isRequired
-}
+CourseInfo.propTypes = { active: PropTypes.string.isRequired }
 
 
 export default CourseInfo

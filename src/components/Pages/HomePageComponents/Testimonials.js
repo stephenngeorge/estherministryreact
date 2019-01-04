@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 // import child components
-import Quote from './Quote';
+import Quote from './Quote'
 
-const Testimonials = () => {
+export default () => {
   // array of quotes mapped to array of <Quote /> components in return()
   const quotesList = [
     '"This has given me a fresh boldness to speak to everyone I know about Jesus"',
@@ -24,8 +24,5 @@ const Testimonials = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
-
-
-export default Testimonials

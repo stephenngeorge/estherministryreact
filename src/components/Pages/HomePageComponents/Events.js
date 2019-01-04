@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 // import child components
-import Event from './Event';
+import Event from './Event'
 
 // import assets
 import calendar_icon from '../../../assets/calendar_icon.png'
 
-const Events = () => {
+export default () => {
   // array of upcoming events, mapped to array of <Event /> components in return()
   const eventsList = [
     { type: 'GIFTING DAY', location: 'Tannery House, Bakewell', date: new Date(1500073200000) },
@@ -30,8 +30,5 @@ const Events = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
-
-
-export default Events
