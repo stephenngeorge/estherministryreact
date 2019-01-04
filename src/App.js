@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
 
 // import Page Components
-import { HomePage, AboutPage } from './components/Pages'
+import { HomePage, AboutPage, BoardPage } from './components/Pages'
 import { Affiliation, Navigation } from './components/Globals'
 
 class App extends Component {
@@ -19,6 +19,7 @@ class App extends Component {
           <div className='app-contents'>
             <Route path='/' exact component={ HomePage } />
             <Route path='/about' component={ AboutPage } />
+            <Route path='/advisory-board' component={ BoardPage } />
           </div>
 
           <footer>
