@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const BoardMember = props => {
-  const { imgUrl, name, text } = props.info
+const BoardMember = ({ info }) => {
+  const { imgUrl, name, text } = info
   return (
     <div className='board-member'>
       <img src={ imgUrl } alt='board member profile pic' />

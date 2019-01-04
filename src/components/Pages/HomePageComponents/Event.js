@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ExtendedPropTypes from 'extended-proptypes'
 
-const Event = props => {
+const Event = ({ date, type, location}) => {
   // construct date in correct format, rendered in '.event-date', line 13
-  let dateString = `${props.date.getDate()}/${props.date.getMonth() + 1}/${props.date.getFullYear()}`;
+  let dateString = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
   return (
     <div className='event'>
-      <p className='event-type highlight'>{ props.type }</p>
+      <p className='event-type highlight'>{ type }</p>
       <div>
-        <p className='event-location'>{ props.location }</p>
+        <p className='event-location'>{ location }</p>
         <p className='event-date'>{ dateString }</p>
       </div>
     </div>

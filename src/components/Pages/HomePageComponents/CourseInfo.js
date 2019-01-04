@@ -5,8 +5,7 @@ import PropTypes from 'prop-types'
 import speechmarks_grey from '../../../assets/speechmarks_grey.png'
 
 // conditional rendering based on active button prop (passed down from Courses.js)
-const CourseInfo = props => {
-  let { active } = props
+const CourseInfo = ({ active }) => {
   if (active === 'gifting-day') {
     return (
       <div className='course-info'>

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Quote = props => (
+const Quote = ({ text }) => (
   <div className='quote'>
-    <p>{ props.text }</p>
+    <p>{ text }</p>
   </div>
 )
 
