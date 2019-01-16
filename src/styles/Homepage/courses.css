@@ -74,6 +74,7 @@
 {
   color: #77ADA5;
   border: 2px solid #77ADA5;
+  letter-spacing: normal;
 
   -webkit-transition: all .8s;
   -moz-transition: all .8s;
@@ -86,6 +87,7 @@
   background-color: #77ADA5;
   color: #3E403F;
   outline: none;
+  letter-spacing: 1px;
 
   -webkit-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
   -moz-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
@@ -96,6 +98,7 @@
 {
   color: #3E403F;
   border: 2px solid #3E403F;
+  letter-spacing: normal;
 
   -webkit-transition: all .8s;
   -moz-transition: all .8s;
@@ -108,6 +111,7 @@
   background-color: #3E403F;
   color: #77ADA5;
   outline: none;
+  letter-spacing: 1px;
 
   -webkit-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
   -moz-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);

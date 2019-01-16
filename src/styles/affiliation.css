@@ -52,6 +52,7 @@
 {
     text-decoration: none;
     color: #fff;
+    letter-spacing: normal;
 
     -webkit-transition: all .8s;
     -moz-transition: all .8s;
@@ -63,4 +64,5 @@
 {
     color: #77ADA5;
     outline: none;
+    letter-spacing: 1px;
 }

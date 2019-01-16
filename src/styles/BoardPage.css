@@ -52,10 +52,20 @@
 
     margin-bottom: 40px;
 }
+
+.board-member:hover > img
+{
+    filter: grayscale(0);
+}
+.board-member:hover > div > .board-member_name
+{
+    letter-spacing: 1px;
+}
   
 .board-member > img
 {
     width: 200px;
+    filter: grayscale(100%);
 
     -webkit-boder-radius: 50%;
     -moz-border-radius: 50%;
@@ -64,6 +74,11 @@
     -webkit-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
     -moz-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
     box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
+
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
 }
 
 .board-member > div
@@ -85,6 +100,12 @@
     color: #77ADA5;
     text-transform: uppercase;
     margin-bottom: 10px;
+    letter-spacing: normal;
+
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
 }
 
 .board-member_text

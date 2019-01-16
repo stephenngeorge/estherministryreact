@@ -95,6 +95,7 @@
     font-size: 18px;
     text-decoration: none;
     color: #fff;
+    letter-spacing: normal;
 
     -webkit-transition: all .8s;
     -moz-transition: all .8s;
@@ -107,6 +108,7 @@
     color: #77ADA5;
     background-color: #252625;
     outline: none;
+    letter-spacing: 1px;
 }
 
 /*
