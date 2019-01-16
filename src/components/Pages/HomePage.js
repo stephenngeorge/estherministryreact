@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 // import child components
 import { Hero, Courses, Events, Testimonials } from './HomePageComponents'
 
-const HomePage = () => (
-    <div className='page home-page'>
-        <Hero />
-        <Courses />
-        <Events />
-        <Testimonials />
-    </div>   
-)
+export default class HomePage extends Component {
 
-export default HomePage
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
+    render() {
+        return (
+            <div className='page home-page'>
+                <Hero />
+                <Courses />
+                <Events />
+                <Testimonials />
+            </div>   
+        )
+    }
+}
