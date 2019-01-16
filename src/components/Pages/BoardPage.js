@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Spring } from 'react-spring'
 
 // import child components
 import { BoardMember } from './BoardPageComponents'
@@ -14,14 +15,22 @@ export default class BoardPage extends Component {
 
   render() {
     return (
-      <div className='page advisory-board-page'>
-        <div className='content'>
-          <h2>Advisory Board</h2>
-          {
-            boardMembers.map((member, i) => <BoardMember info={ member } key={i} />)
-          }
-        </div>
-      </div>
+      <Spring from={ {opacity: 0} } to={ {opacity: 1} }>
+        {
+          props => (
+            <div style={ props }>
+              <div className='page advisory-board-page'>
+                <div className='content'>
+                  <h2>Advisory Board</h2>
+                  {
+                    boardMembers.map((member, i) => <BoardMember info={ member } key={i} />)
+                  }
+                </div>
+              </div>      
+            </div>
+          )
+        }
+      </Spring>
     )
   }
 }

@@ -18,9 +18,21 @@
     background-attachment: fixed;
 }
 
-.description > .content
+.description > div
 {
     width: 80%;
+    max-width: 800px;
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+}
+
+.description-content
+{
     max-width: 800px;
 
     display: -webkit-flex;
@@ -34,21 +46,21 @@
     background-color: rgba(255, 255, 255, .7);
 }
   
-.description > .content > h3
+.description-content > h3
 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 60px;
     text-transform: uppercase;
 }
 
-.description > .content > p
+.description-content > p
 {
     font-family: 'Source Serif Pro', serif;
     font-size: 18px;
     color: #3E403F;
 }
 
-.description > .content > p > img
+.description-content > p > img
 {
     width: 30px;
     height: 30px;

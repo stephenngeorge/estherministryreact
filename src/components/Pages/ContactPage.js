@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Spring } from 'react-spring'
 
 // import child components
 import { ContactText, ContactLinks } from './ContactPageComponents'
@@ -11,12 +12,20 @@ export default class ContactPage extends Component {
 
   render() {
     return (
-      <div className='contact-page'>
-        <div className='content'>
-          <ContactText />
-          <ContactLinks />
-        </div>
-      </div>
+      <Spring from={ {opacity: 0} } to={ {opacity: 1} }>
+        {
+          props => (
+            <div style={ props }>
+              <div className='contact-page'>
+                <div className='content'>
+                  <ContactText />
+                  <ContactLinks />
+                </div>
+              </div>      
+            </div>
+          )
+        }
+      </Spring>
     )
   }
 }

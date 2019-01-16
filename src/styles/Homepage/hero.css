@@ -21,7 +21,7 @@
 }
 
   
-.hero > img
+#logo_main
 {
     width: 350px;
 
@@ -34,7 +34,7 @@
     -o-transition: all .8s;
     transition: all .8s;
 }
-.hero > img:hover, .hero > img:focus
+#logo_main:hover, #logo_main:focus
 {
     outline: none;
     transform: scale(1.03, 1.03);
