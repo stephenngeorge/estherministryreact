@@ -28,6 +28,21 @@
     outline: none;
 }
   
+.navbar-home
+{
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 21px;
+    text-decoration: none;
+    color: #77ADA5;
+    letter-spacing: normal;
+}
+
 #navbar-logo
 {
     height: 43px;

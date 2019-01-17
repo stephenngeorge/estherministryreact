@@ -1,6 +1,5 @@
 import Bibleverse from './Bibleverse'
-import Description from './Description'
-import FindOutMore from './FindOutMore'
+import Courses from './Courses'
 import Review from './Review'
 
-export { Bibleverse, Description, FindOutMore, Review }
+export { Bibleverse, Courses, Review }

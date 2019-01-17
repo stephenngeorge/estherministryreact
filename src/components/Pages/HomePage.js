@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Spring } from 'react-spring'
 
 // import child components
-import { Hero, Courses, Events, Testimonials } from './HomePageComponents'
+import { Hero, Description, Events, Testimonials } from './HomePageComponents'
+import { FindOutMore } from '../Globals'
 
 export default class HomePage extends Component {
 
@@ -18,7 +19,8 @@ export default class HomePage extends Component {
                         <div style={ props }>
                             <div className='page home-page'>
                                 <Hero />
-                                <Courses />
+                                <FindOutMore />
+                                <Description />
                                 <Events />
                                 <Testimonials />
                             </div>            

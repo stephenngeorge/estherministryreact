@@ -14,7 +14,7 @@ const Navigation = () => {
 //  let resources = !!sessionStorage.getItem('auth') ? <li><Link to='/resources'>RESOURCES</Link></li> : null;
   return (
     <div className='navigation'>
-      <Link to='/'><img id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' /></Link>
+      <Link to='/' className='navbar-home'><img id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' /><p>ESTHER MINISTRY</p></Link>
       <ul className='navbar'>
         <li><Link to='/about'>ABOUT</Link></li>
         <li><Link to='/advisory-board'>ADVISORY BOARD</Link></li>

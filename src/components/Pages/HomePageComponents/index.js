@@ -1,6 +1,6 @@
 import Hero from './Hero';
-import Courses from './Courses';
+import Description from './Description';
 import Events from './Events';
 import Testimonials from './Testimonials';
 
-export { Hero, Courses, Events, Testimonials }
+export { Hero, Description, Events, Testimonials }

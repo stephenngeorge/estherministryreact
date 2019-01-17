@@ -1,6 +1,7 @@
 .bible-verse
 {
     width: 100%;
+    padding-top: 60px;
 
     display: -webkit-flex;
     display: flex;

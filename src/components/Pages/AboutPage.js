@@ -2,7 +2,8 @@ import React, { Component} from 'react'
 import { Spring } from 'react-spring'
 
 // import child components
-import { Bibleverse, Description, FindOutMore, Review } from './AboutPageComponents'
+import { Bibleverse, Courses, Review } from './AboutPageComponents'
+import { FindOutMore } from '../Globals'
 
 export default class AboutPage extends Component {
 
@@ -17,9 +18,9 @@ export default class AboutPage extends Component {
         props => (
           <div style={ props }>
             <div className='page about-page'>
-              <Description />
-              <FindOutMore />
               <Bibleverse />
+              <Courses />
+              <FindOutMore />
               <Review />
             </div>    
           </div>
