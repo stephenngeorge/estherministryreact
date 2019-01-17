@@ -1,21 +1,66 @@
 .hero
 {
-    height: 90vh;
+    height: 82vh;
     width: 100vw;
+
+    padding-top: 60px;
 
     display: -webkit-flex;
     display: flex;
 
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    justify-content: space-around;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
 
-    -webkit-align-items: center;
-    align-items: center;
-  
     background-image: url('../../assets/Rowena_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.hero > ul
+{
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.hero > ul > li
+{
+    display: -webkit-flex;
+    display: flex;
+
+    width: 80px;
+}
+
+.hero > ul > li > a
+{
+    width: 40px;
+}
+
+.hero > ul > li > a > img
+{
+    width: 100%;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.hero > ul > li > a > img:hover
+{
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+#email-icon
+{
+    width: 46px;
 }
