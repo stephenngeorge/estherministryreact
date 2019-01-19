@@ -2,6 +2,7 @@ import React from 'react'
 
 // import child components
 import HeroLinks from './HeroLinks'
+import HeroText from './HeroText'
 
 // import assets
 // import Esther_Logo_Green from '../../../assets/Esther_Logo_Green.jpg'
@@ -9,6 +10,7 @@ import HeroLinks from './HeroLinks'
 export default () => (
   <div className='hero'>
     <HeroLinks />
+    <HeroText />
   </div>
 )
 

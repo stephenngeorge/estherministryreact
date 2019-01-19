@@ -29,6 +29,10 @@
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center;
+
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(40, 40, 40, .8);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(40, 40, 40, .8);
+    box-shadow: 0px 0px 7px 3px rgba(40, 40, 40, .8);
 }
 
 .description-content
