@@ -33,14 +33,27 @@
     display: -webkit-flex;
     display: flex;
 
+    text-decoration: none;
+
     -webkit-align-items: center;
     align-items: center;
-
+}
+.navbar-home > p
+{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 21px;
-    text-decoration: none;
     color: #77ADA5;
     letter-spacing: normal;
+
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+.navbar-home:hover > p, .navbar-home:focus > p
+{
+    letter-spacing: 1px;
 }
 
 #navbar-logo
