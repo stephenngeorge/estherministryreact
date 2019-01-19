@@ -34,12 +34,12 @@
     display: -webkit-flex;
     display: flex;
 
-    width: 80px;
+    width: 72px;
 }
 
 .hero > ul > li > a
 {
-    width: 40px;
+    width: 34px;
 }
 
 .hero > ul > li > a > img
@@ -62,7 +62,7 @@
 
 #email-icon
 {
-    width: 46px;
+    width: 40px;
 }
 
 .hero-text
