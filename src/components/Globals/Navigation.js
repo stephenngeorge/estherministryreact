@@ -14,10 +14,17 @@ class Navigation extends Component {
     icon.classList.toggle('icon-active')
   }
 
+  removeActive = () => {
+    const navbar = document.querySelector('.navbar')
+    const icon = document.querySelector('.icon')
+    navbar.classList.remove('active')
+    icon.classList.remove('icon-active')
+  }
+
   render() {
     return (
       <div className='navigation'>
-        <Link to='/' className='navbar-home'><img id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' /><p>ESTHER MINISTRY</p></Link>
+        <Link to='/' className='navbar-home'><img onClick={ this.removeActive } id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' /><p>ESTHER MINISTRY</p></Link>
         <ul className='navbar'>
           <li onClick={ this.toggleActive }>
             <Link to='/about'>ABOUT</Link>
