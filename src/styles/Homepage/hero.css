@@ -36,6 +36,10 @@
 
     width: 72px;
 }
+.hero > ul > li > a:focus
+{
+    outline: none;
+}
 
 .hero > ul > li > a
 {

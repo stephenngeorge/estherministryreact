@@ -139,6 +139,11 @@
     letter-spacing: 1px;
 }
 
+.icon
+{
+    display: none;
+}
+
 /*
 FOR USE IF LOGOUT FUNCTIONALITY IS REQUIRED
   #logout-btn {
