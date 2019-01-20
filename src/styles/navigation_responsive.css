@@ -80,6 +80,18 @@
     {
         padding: 20px;
     }
+    .navbar > li > a
+    {
+        font-size: 20px;
+    }
+    .navbar > li > a:hover, .navbar > li > a:focus
+    {
+        color: #77ADA5;
+        background-color: #3E403F;
+        outline: none;
+        letter-spacing: 1px;
+    }
+
 
     .active
     {

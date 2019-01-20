@@ -19,9 +19,15 @@ class Navigation extends Component {
       <div className='navigation'>
         <Link to='/' className='navbar-home'><img id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' /><p>ESTHER MINISTRY</p></Link>
         <ul className='navbar'>
-          <li><Link to='/about'>ABOUT</Link></li>
-          <li><Link to='/advisory-board'>ADVISORY BOARD</Link></li>
-          <li><Link to='/contact'>CONTACT</Link></li>     
+          <li onClick={ this.toggleActive }>
+            <Link to='/about'>ABOUT</Link>
+          </li>
+          <li onClick={ this.toggleActive }>
+            <Link to='/advisory-board'>ADVISORY BOARD</Link>
+          </li>
+          <li onClick={ this.toggleActive }>
+            <Link to='/contact'>CONTACT</Link>
+          </li>     
         </ul>
         <div className='icon' onClick={ this.toggleActive }><div className='menu-icon'></div></div>
       </div>
