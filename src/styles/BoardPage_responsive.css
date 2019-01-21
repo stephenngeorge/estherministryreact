@@ -1,4 +1,52 @@
-.board-member > img
+@media screen and (max-width: 800px)
 {
-    filter: none;
+    .board-member > img
+    {
+        filter: none;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .board-member
+    {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+
+        width: 80%;
+    }
+    .board-member > img
+    {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .board-member
+    {
+        width: 100%;
+
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .board-member_name, .board-member_text
+    {
+        text-align: center;
+    }
+
+    .board-member > img
+    {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 430px)
+{
+    .advisory-board-page > .content > h2
+    {
+        font-size: 68px;
+    }
 }

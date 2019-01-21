@@ -26,4 +26,11 @@
     font-size: 21px;
     color: #fff;
 }
-  
+
+@media screen and (max-width: 500px)
+{
+    .review > .content
+    {
+        width: 80%;
+    }
+}
