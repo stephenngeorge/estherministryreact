@@ -27,6 +27,7 @@
     align-items: center;
 
     padding: 20px;
+    padding-top: 24px;
 }
 
 .hero > ul > li
@@ -73,7 +74,7 @@
 {
     position: absolute;
     top: 88px;
-    right: 40px;
+    right: 34px;
 
     padding: 20px;
     width: 300px;
