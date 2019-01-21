@@ -1,0 +1,66 @@
+@media screen and (max-width: 800px)
+{
+    .upcoming-events > .content
+    {
+        width: 90%;
+    }
+
+    .upcoming-events__header > h3
+    {
+        font-size: 66px;
+    }
+    .upcoming-events__header > img
+    {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .upcoming-events > .content
+    {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .upcoming-events__header
+    {
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        flex-direction: row;
+
+        width: 80%;
+    }
+    .upcoming-events__header > h3, .upcoming-events__header > img
+    {
+        padding: 0 18px;
+        margin-bottom: 0;
+    }
+
+    .events-list
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px)
+{
+    .event
+    {
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .event > div
+    {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        flex-direction: column;
+
+        -webkit-align-items: center;
+        align-items: center;
+    }
+}

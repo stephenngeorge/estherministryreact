@@ -1,0 +1,21 @@
+@media screen and (max-width: 680px)
+{
+    .hero-text
+    {
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-links
+    {
+        position: absolute;
+        bottom: 9%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero-links > li
+    {
+        justify-content: center;
+    }
+}

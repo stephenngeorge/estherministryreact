@@ -2,8 +2,10 @@
 @import './styles/navigation_responsive.css';
 
 @import './styles/Homepage/hero.css';
+@import './styles/Homepage/hero_responsive.css';
 @import './styles/Homepage/description.css';
 @import './styles/Homepage/events.css';
+@import './styles/Homepage/events_responsive.css';
 @import './styles/Homepage/event.css';
 @import './styles/Homepage/testimonials.css';
 @import './styles/Homepage/quote.css';
@@ -15,6 +17,7 @@
 @import './styles/Aboutpage/review.css';
 
 @import './styles/BoardPage.css';
+@import './styles/BoardPage_responsive.css';
 
 @import './styles/ContactPage.css';
 

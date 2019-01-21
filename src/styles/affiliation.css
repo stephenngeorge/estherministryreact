@@ -68,3 +68,11 @@
     outline: none;
     letter-spacing: 1px;
 }
+
+@media screen and (max-width: 600px)
+{
+    .affiliation > p
+    {
+        font-size: 24px;
+    }
+}
