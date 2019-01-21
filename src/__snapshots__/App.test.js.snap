@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  class="App"
+>
+  <header>
+    <div
+      class="navigation"
+    >
+      <a
+        class="navbar-home"
+        href="/"
+      >
+        <img
+          alt="navbar logo"
+          id="navbar-logo"
+          src="Esther_Logo_Green.jpg"
+        />
+        <p>
+          ESTHER MINISTRY
+        </p>
+      </a>
+      <ul
+        class="navbar"
+      >
+        <li>
+          <a
+            href="/about"
+          >
+            ABOUT
+          </a>
+        </li>
+        <li>
+          <a
+            href="/advisory-board"
+          >
+            ADVISORY BOARD
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+          >
+            CONTACT
+          </a>
+        </li>
+      </ul>
+      <div
+        class="icon"
+      >
+        <div
+          class="menu-icon"
+        />
+      </div>
+    </div>
+  </header>
+  <div
+    class="app-contents"
+  >
+    <div
+      style="opacity:0"
+    >
+      <div
+        class="page home-page"
+      >
+        <div
+          class="hero"
+        >
+          <ul
+            class="hero-links"
+          >
+            <li>
+              <a
+                href="https://www.facebook.com/estherministryuk/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="facebook-icon"
+                  src="facebook-icon.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/estherministry/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="instagram-icon"
+                  src="instagram-icon.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:rowena@estherministry.org.uk?Subject=Website%20Enquiry"
+                id="email-icon"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="email-icon"
+                  src="email-icon.png"
+                />
+              </a>
+            </li>
+          </ul>
+          <div
+            class="hero-text"
+          >
+            <h3
+              class="highlight"
+            >
+              Esther Ministry
+            </h3>
+            <p>
+              Esther Ministry was founded by Rowena Cross. Rowena is a speaker, church leader and evangelist with a passion to release people into their gifting and set them on fire for God.
+              <br />
+              <br />
+              Rowena serves as Assistant Pastor in charge of Evangelism and Discipleship at St Saviour's Church, Sunbury. She has appeared on UCB, and worked with organisations like TearFund and New Wine.
+            </p>
+          </div>
+        </div>
+        <div
+          class="find-out-more"
+        >
+          <div
+            class="content"
+          >
+            <p>
+              Find out more, enquire
+              <br />
+              about booking a course:
+            </p>
+            <a
+              href="/contact"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
+        </div>
+        <section
+          class="description"
+        >
+          <div
+            class="content description-content"
+          >
+            <h3>
+              That 
+              <span
+                class="highlight"
+              >
+                Esther Moment
+              </span>
+            </h3>
+            <p>
+              <img
+                alt="speechmarks"
+                src="speechmarks_grey.png"
+              />
+              Esther Ministry was founded to equip, empower and release people into their calling, so that everyone can have their 'Esther' moment. Esther was a beautiful queen who stepped out in faith, trusting in God and because of her bravery the lives of thousands of people were saved. Following the call that God has on your life is not just about serving others it is also about living as the person God intended you to be. I genuinely believed that I didn’t have any gifts. Esther didn’t believe in herself either and it took someone else to prompt her to discover her calling. So Esther Ministry was founded to provide a practical way to discover your true gifts and skills and put them into action for God.
+            </p>
+          </div>
+        </section>
+        <section
+          class="upcoming-events"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="upcoming-events__header"
+            >
+              <h3>
+                Upcoming
+                <br />
+                Events
+              </h3>
+              <img
+                alt="events-calendar"
+                src="calendar_icon.png"
+              />
+            </div>
+            <div
+              class="events-list"
+            >
+              <div
+                class="event"
+              >
+                <p
+                  class="event-type highlight"
+                >
+                  GIFTING DAY
+                </p>
+                <div>
+                  <p
+                    class="event-location"
+                  >
+                    Newark Salvation Army, NG24 3GA
+                  </p>
+                  <p
+                    class="event-date"
+                  >
+                    2/3/2019
+                  </p>
+                </div>
+              </div>
+              <div
+                class="event"
+              >
+                <p
+                  class="event-type highlight"
+                >
+                  SHORT COURSE (SESSION ONE)
+                </p>
+                <div>
+                  <p
+                    class="event-location"
+                  >
+                    Tearfund (Staff Only)
+                  </p>
+                  <p
+                    class="event-date"
+                  >
+                    21/1/2019
+                  </p>
+                </div>
+              </div>
+              <div
+                class="event"
+              >
+                <p
+                  class="event-type highlight"
+                >
+                  WORSHIP & THE WORD SERVICE
+                </p>
+                <div>
+                  <p
+                    class="event-location"
+                  >
+                    St Giles' Church, Ickenham
+                  </p>
+                  <p
+                    class="event-date"
+                  >
+                    17/3/2019
+                  </p>
+                </div>
+              </div>
+              <div
+                class="event"
+              >
+                <p
+                  class="event-type highlight"
+                >
+                  CLERGY WIVES RETREAT
+                </p>
+                <div>
+                  <p
+                    class="event-location"
+                  >
+                    Shipston-on-Stour, Warwickshire
+                  </p>
+                  <p
+                    class="event-date"
+                  >
+                    26/3/2019
+                  </p>
+                </div>
+              </div>
+              <div
+                class="event"
+              >
+                <p
+                  class="event-type highlight"
+                >
+                  GIFTING DAY
+                </p>
+                <div>
+                  <p
+                    class="event-location"
+                  >
+                    St John the Baptist, Huddersfield
+                  </p>
+                  <p
+                    class="event-date"
+                  >
+                    8/6/2019
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="testimonials"
+        >
+          <div
+            class="content"
+          >
+            <h3>
+              What People are saying
+            </h3>
+            <div
+              class="quotes-list"
+            >
+              <div
+                class="quote"
+              >
+                <p>
+                  "This has given me a fresh boldness to speak to everyone I know about Jesus"
+                </p>
+              </div>
+              <div
+                class="quote"
+              >
+                <p>
+                  "This course has helped me realise that what I am doing now is part of where I am going to...that God has not forgotten me"
+                </p>
+              </div>
+              <div
+                class="quote"
+              >
+                <p>
+                  "I'm going to come back to church"
+                </p>
+              </div>
+              <div
+                class="quote"
+              >
+                <p>
+                  "I will put my gifts in to action"
+                </p>
+              </div>
+              <div
+                class="quote"
+              >
+                <p>
+                  "Great balance of discussion and personal reflection"
+                </p>
+              </div>
+              <div
+                class="quote"
+              >
+                <p>
+                  "Thank you for showing me however rubbish we feel, we are good enough"
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div
+      class="affiliation"
+    >
+      <a
+        href="https://www.ijm.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="ijm-logo"
+          src="ijm_logo.jpg"
+        />
+      </a>
+      <p>
+        Esther Ministry is proud to support
+        <br />
+        <a
+          href="https://www.ijm.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          'International Justice Mission'
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;
