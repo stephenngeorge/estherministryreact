@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Esther_Logo_Green from '../../assets/Esther_Logo_Green.jpg'
 
 
-class Navigation extends Component {
+export default class Navigation extends Component {
 
   toggleActive = () => {
     const navbar = document.querySelector('.navbar')
@@ -41,10 +41,6 @@ class Navigation extends Component {
     )
   }
 }
-
-
-export default Navigation
-
 // render this at the end of navbar ul if login stuff is required & uncomment line 14:
 // { resources }
 
