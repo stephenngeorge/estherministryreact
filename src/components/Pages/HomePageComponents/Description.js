@@ -4,7 +4,7 @@ import React from 'react'
 import speechmarks_grey from '../../../assets/speechmarks_grey.png'
 
 export default () => (
-  <section className='description'>
+  <section className='description' role='main'>
     <div className='content description-content'>
       <h3>That <span className='highlight'>Esther Moment</span></h3>
       <p>

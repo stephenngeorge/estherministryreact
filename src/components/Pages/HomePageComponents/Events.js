@@ -16,7 +16,7 @@ export default () => {
     { type: 'GIFTING DAY', location: 'St John the Baptist, Huddersfield', date: new Date('June 8, 2019 09:00:00') }
   ]
   return (
-    <section className='upcoming-events'>
+    <section className='upcoming-events' role='complementary'>
       <div className='content'>
         <div className='upcoming-events__header'>
           <h3>Upcoming<br />Events</h3>

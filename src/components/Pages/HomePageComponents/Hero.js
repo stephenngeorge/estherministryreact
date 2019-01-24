@@ -8,7 +8,7 @@ import HeroText from './HeroText'
 // import Esther_Logo_Green from '../../../assets/Esther_Logo_Green.jpg'
 
 export default () => (
-  <div className='hero'>
+  <div className='hero' role='banner'>
     <HeroLinks />
     <HeroText />
   </div>

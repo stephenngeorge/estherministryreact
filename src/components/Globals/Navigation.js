@@ -14,6 +14,7 @@ export default class Navigation extends Component {
     icon.classList.toggle('icon-active')
   }
 
+  // this function used to make sure menu is CLOSED when home page link is clicked
   removeActive = () => {
     const navbar = document.querySelector('.navbar')
     const icon = document.querySelector('.icon')
@@ -23,20 +24,25 @@ export default class Navigation extends Component {
 
   render() {
     return (
-      <div className='navigation'>
-        <Link to='/' className='navbar-home'><img onClick={ this.removeActive } id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' /><p>ESTHER MINISTRY</p></Link>
+      <div className='navigation' role='navigation'>
+        <Link to='/' className='navbar-home' aria-label='home page link'>
+          <img onClick={ this.removeActive } id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' />
+          <p>ESTHER MINISTRY</p>
+        </Link>
         <ul className='navbar'>
           <li onClick={ this.toggleActive }>
-            <Link to='/about'>ABOUT</Link>
+            <Link to='/about' aria-label='about page link'>ABOUT</Link>
           </li>
           <li onClick={ this.toggleActive }>
-            <Link to='/advisory-board'>ADVISORY BOARD</Link>
+            <Link to='/advisory-board' aria-label='advisory board page link'>ADVISORY BOARD</Link>
           </li>
           <li onClick={ this.toggleActive }>
-            <Link to='/contact'>CONTACT</Link>
+            <Link to='/contact' aria-label='contact page link'>CONTACT</Link>
           </li>     
         </ul>
-        <div className='icon' onClick={ this.toggleActive }><div className='menu-icon'></div></div>
+        <div className='icon' onClick={ this.toggleActive } aria-label='toggle menu'>
+          <div className='menu-icon'></div>
+        </div>
       </div>
     )
   }

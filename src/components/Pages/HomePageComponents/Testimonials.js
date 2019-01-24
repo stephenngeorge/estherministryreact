@@ -14,7 +14,7 @@ export default () => {
     '"Thank you for showing me however rubbish we feel, we are good enough"'
   ]
   return (
-    <section className='testimonials'>
+    <section className='testimonials' role='complementary'>
       <div className='content'>
         <h3>What People are saying</h3>
         <div className='quotes-list'>
