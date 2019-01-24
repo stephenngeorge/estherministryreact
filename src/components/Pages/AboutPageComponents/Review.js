@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default () => (
-  <div className='review'>
+  <div className='review' role='complementary'>
     <div className='content'>
       <p>
       &#34;The <span className='highlight'>Esther Ministry </span>

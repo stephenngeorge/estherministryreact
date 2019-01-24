@@ -19,7 +19,7 @@ export default class BoardPage extends Component {
         {
           props => (
             <div style={ props }>
-              <div className='page advisory-board-page'>
+              <div className='page advisory-board-page' role='main'>
                 <div className='content'>
                   <h2>Advisory Board</h2>
                   {

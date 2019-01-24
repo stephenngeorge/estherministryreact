@@ -16,7 +16,7 @@ export default class ContactPage extends Component {
         {
           props => (
             <div style={ props }>
-              <div className='contact-page'>
+              <div className='contact-page' role='main'>
                 <div className='content'>
                   <ContactText />
                   <ContactLinks />

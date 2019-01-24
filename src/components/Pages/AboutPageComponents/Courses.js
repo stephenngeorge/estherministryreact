@@ -28,11 +28,11 @@ export default class Courses extends Component {
 
   render() {
     return (
-      <section className='courses'>
+      <section className='courses' role='main'>
         <div className='content'>
           <div className='courses-btns'>
-            <button id='gifting-day' className='active' onClick={ this._toggleActive }>GIFTING DAY</button>
-            <button id='clergy-spouse' onClick={ this._toggleActive }>CLERGY SPOUSE</button>
+            <button id='gifting-day' className='active' onClick={ this._toggleActive } aria-label='expand Gifting Day info'>GIFTING DAY</button>
+            <button id='clergy-spouse' onClick={ this._toggleActive } aria-label='expand Clergy Spouse Day info'>CLERGY SPOUSE</button>
           </div>
           <CourseInfo active={ this.state.activeBtn } />
         </div>
