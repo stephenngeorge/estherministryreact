@@ -13,6 +13,11 @@
     {
         width: 80px;
     }
+
+    .event > div
+    {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 680px)
