@@ -27,7 +27,7 @@ export default class Navigation extends Component {
       <div className='navigation' role='navigation'>
         <Link to='/' className='navbar-home' aria-label='home page link'>
           <img onClick={ this.removeActive } id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' />
-          <p>ESTHER MINISTRY</p>
+          <p onClick={ this.removeActive }>ESTHER MINISTRY</p>
         </Link>
         <ul className='navbar'>
           <li onClick={ this.toggleActive }>
