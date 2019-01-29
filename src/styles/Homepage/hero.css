@@ -18,7 +18,7 @@
     background-attachment: fixed;
 }
 
-.hero > ul
+.hero-links
 {
     display: -webkit-flex;
     display: flex;
@@ -30,24 +30,24 @@
     padding-top: 24px;
 }
 
-.hero > ul > li
+.hero-links > li
 {
     display: -webkit-flex;
     display: flex;
 
     width: 72px;
 }
-.hero > ul > li > a:focus
+.hero-links > li > a:focus
 {
     outline: none;
 }
 
-.hero > ul > li > a
+.hero-links > li > a
 {
     width: 34px;
 }
 
-.hero > ul > li > a > img
+.hero-links > li > a > img
 {
     width: 100%;
 
@@ -56,7 +56,7 @@
     -o-transition: all .4s;
     transition: all .4s;
 }
-.hero > ul > li > a > img:hover
+.hero-links > li > a > img:hover
 {
     -webkit-transform: scale(1.1, 1.1);
     -moz-transform: scale(1.1, 1.1);

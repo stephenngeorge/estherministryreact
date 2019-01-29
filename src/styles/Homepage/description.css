@@ -75,5 +75,6 @@
     .description
     {
         background-attachment: scroll;
+        background-position: center;
     }
 }

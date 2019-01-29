@@ -27,13 +27,6 @@
 
     .hero-links
     {
-        position: absolute;
-        bottom: 60px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .hero-links > li
-    {
-        justify-content: center;
+        display: none;
     }
 }

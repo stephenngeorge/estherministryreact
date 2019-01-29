@@ -1,5 +1,9 @@
 @media screen and (max-width: 800px)
 {
+    .advisory-board-page > .content > h2
+    {
+        text-align: center;
+    }
     .board-member > img
     {
         filter: none;
