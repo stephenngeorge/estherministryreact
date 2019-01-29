@@ -24,8 +24,6 @@ export default () => (
         </li>
         <li>
             <a  href='mailto:rowena@estherministry.org.uk?Subject=Website%20Enquiry'
-                target='_blank'
-                rel='noopener noreferrer'
                 id='email-icon'
             >
                 <img src={ email_icon } alt='email-icon' />

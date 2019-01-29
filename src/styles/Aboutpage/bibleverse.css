@@ -52,3 +52,11 @@
     text-align: center;
     color: #3E403F;
 }
+
+@media screen and (max-width: 1024px)
+{
+    .bible-verse
+    {
+        background-attachment: scroll;
+    }
+}
