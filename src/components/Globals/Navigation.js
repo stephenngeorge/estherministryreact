@@ -22,12 +22,17 @@ export default class Navigation extends Component {
     icon.classList.remove('icon-active')
   }
 
+  handleHomeClick = () => {
+    this.removeActive()
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
+
   render() {
     return (
       <div className='navigation' role='navigation'>
         <Link to='/' className='navbar-home' aria-label='home page link'>
-          <img onClick={ this.removeActive } id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' />
-          <p onClick={ this.removeActive }>ESTHER MINISTRY</p>
+          <img onClick={ this.handleHomeClick } id='navbar-logo' src={ Esther_Logo_Green } alt='navbar logo' />
+          <p onClick={ this.handleHomeClick }>ESTHER MINISTRY</p>
         </Link>
         <ul className='navbar'>
           <li onClick={ this.toggleActive }>
