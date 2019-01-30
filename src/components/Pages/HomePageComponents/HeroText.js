@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => (
     <div className='hero-text'>
-        <h3 className='highlight'>Esther Ministry</h3>
+        <h3>Esther Ministry</h3>
         <p>Esther Ministry was founded by Rowena Cross. Rowena is a speaker, church leader
             and evangelist with a passion to release people into their gifting and set them on
             fire for God.

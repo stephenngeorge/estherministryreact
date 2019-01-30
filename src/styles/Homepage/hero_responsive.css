@@ -24,6 +24,10 @@
         width: 300px;
         background-color: rgba(255, 255, 255, .6);
     }
+    .hero-text > h3
+    {
+        color: #3E403F;
+    }
 
     .hero-links
     {
