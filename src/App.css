@@ -22,4 +22,7 @@
 @import './styles/ContactPage.css';
 @import './styles/ContactPage_responsive.css';
 
+@import './styles/TalksPage.css';
+@import './styles/Talkspage/Talksinfo.css';
+
 @import './styles/affiliation.css';

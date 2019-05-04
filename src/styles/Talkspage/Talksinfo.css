@@ -1,0 +1,22 @@
+.talks-info
+{
+    width: 40%;
+}
+
+.talks-info > h2
+{
+    font-family: 'Stalemate', cursive;
+    font-size: 80px;
+    color: #77ADA5;
+    margin-bottom: 20px;
+    transform: rotate(-10deg);
+    text-align: center;
+}
+
+.talks-info > p
+{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}

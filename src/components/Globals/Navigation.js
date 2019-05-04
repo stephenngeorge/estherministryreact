@@ -42,8 +42,11 @@ export default class Navigation extends Component {
             <Link to='/advisory-board' aria-label='advisory board page link'>ADVISORY BOARD</Link>
           </li>
           <li onClick={ this.toggleActive }>
+            <Link to='/talks' aria-label='talks page link'>TALKS</Link>
+          </li>
+          <li onClick={ this.toggleActive }>
             <Link to='/contact' aria-label='contact page link'>CONTACT</Link>
-          </li>     
+          </li>
         </ul>
         <div className='icon' onClick={ this.toggleActive } aria-label='toggle menu'>
           <div className='menu-icon'></div>
