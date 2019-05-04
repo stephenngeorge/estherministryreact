@@ -1,3 +1,4 @@
+import Talks from './Talks'
 import TalksInfo from './TalksInfo'
 
-export { TalksInfo }
+export { Talks, TalksInfo }

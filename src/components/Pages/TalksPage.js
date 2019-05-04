@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Spring } from 'react-spring'
 
 // import child components
-import { TalksInfo } from './TalksPageComponents'
+import { Talks, TalksInfo } from './TalksPageComponents'
 
 export default class TalksPage extends Component {
     componentDidMount() {
@@ -17,6 +17,7 @@ export default class TalksPage extends Component {
                     <div style={ props }>
                         <div className='page talks-page' role='main'>
                             <TalksInfo />
+                            <Talks />
                         </div>
                     </div>
                 )
