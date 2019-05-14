@@ -1,0 +1,144 @@
+.hero
+{
+    height: 82vh;
+    width: 100vw;
+
+    padding-top: 60px;
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+
+    background-image: url('./media/Rowena_1.*.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-links
+{
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    padding: 20px;
+    padding-top: 24px;
+}
+
+.hero-links > li
+{
+    display: -webkit-flex;
+    display: flex;
+
+    width: 72px;
+}
+.hero-links > li > a:focus
+{
+    outline: none;
+}
+
+.hero-links > li > a
+{
+    width: 34px;
+}
+
+.hero-links > li > a > img
+{
+    width: 100%;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.hero-links > li > a > img:hover
+{
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+#email-icon
+{
+    width: 40px;
+}
+
+.hero-text
+{
+    position: absolute;
+    top: 91px;
+    right: 34px;
+
+    padding: 20px;
+    width: 300px;
+
+    background-color: rgba(255, 255, 255, .7);
+
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(40, 40, 40, .8);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(40, 40, 40, .8);
+    box-shadow: 0px 0px 7px 3px rgba(40, 40, 40, .8);
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.hero-text > h3
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #77ADA5;
+}
+
+.hero-text > p
+{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    color: #3E403F;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .hero
+    {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .hero-text
+    {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .hero-text
+    {
+        top: 300px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: rgba(255, 255, 255, .6);
+    }
+    .hero-text > h3
+    {
+        color: #3E403F;
+    }
+
+    .hero-links
+    {
+        display: none;
+    }
+}
