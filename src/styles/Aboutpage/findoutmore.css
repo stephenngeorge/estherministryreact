@@ -66,10 +66,10 @@
     -moz-box-shadow: 0px 0px 6px 2px rgba(90, 90, 90, .4);
     box-shadow: 0px 0px 6px 2px rgba(90, 90, 90, .4);
 
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -o-transition: all .8s;
-    transition: all .8s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
 
 .find-out-more > .content > a:hover, .find-out-more > .content > a:focus
@@ -77,7 +77,6 @@
     color: #77ADA5;
     background-color: #3E403F;
     outline: none;
-    letter-spacing: 1px;
 
     -webkit-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);
     -moz-box-shadow: 0px 0px 7px 3px rgba(90, 90, 90, .6);

@@ -4,6 +4,7 @@ import './App.css';
 
 // import Page Components
 import { HomePage, AboutPage, BoardPage, ContactPage } from './components/Pages'
+import Library from './components/Library'
 import { Affiliation, Navigation } from './components/Globals'
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path='/about' component={ AboutPage } />
             <Route path='/advisory-board' component={ BoardPage } />
             <Route path='/contact' component={ ContactPage } />
+            <Route path='/library' component= { Library } />
           </div>
 
           <footer>

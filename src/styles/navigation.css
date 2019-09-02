@@ -45,15 +45,10 @@
     color: #77ADA5;
     letter-spacing: normal;
 
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -o-transition: all .8s;
-    transition: all .8s;
-}
-
-.navbar-home:hover > p, .navbar-home:focus > p
-{
-    letter-spacing: 1px;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
 
 #navbar-logo
@@ -125,10 +120,10 @@
     color: #fff;
     letter-spacing: normal;
 
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -o-transition: all .8s;
-    transition: all .8s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
 
 .navbar > li > a:hover, .navbar > li > a:focus
@@ -136,7 +131,6 @@
     color: #77ADA5;
     background-color: #252625;
     outline: none;
-    letter-spacing: 1px;
 }
 
 .icon
