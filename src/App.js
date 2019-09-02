@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import './App.css';
-
+import './App.css'
+import './components/Library/app.scss'
 // import Page Components
 import { HomePage, AboutPage, BoardPage, ContactPage } from './components/Pages'
 import Library from './components/Library'

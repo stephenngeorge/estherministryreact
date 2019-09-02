@@ -1,0 +1,11 @@
+// map $font-sizes-headings imported from './typography.scss'
+@each $tag, $size in $font-sizes-headings {
+    #{$tag} {
+        font-size: $size;
+    }
+}
+
+// $font-size-base imported from './variables.scss'
+p {
+    font-size: $font-size-base;
+}

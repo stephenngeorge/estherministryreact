@@ -1,0 +1,22 @@
+// setup map for headings sizes, these styles are implemented 
+// in './base.scss'
+$font-sizes-headings: (
+    "h1": $font-size-base * 2,
+    "h2": $font-size-base * 1.75,
+    "h3": $font-size-base * 1.5,
+    "h4": $font-size-base * 1.3,
+    "h5": $font-size-base * 1.1,
+    "h6": $font-size-base * 1
+);
+// use map $font-sizes-headings to generate classes that can 
+// force font size changes on any element
+@each $tag, $size in $font-sizes-headings {
+    .text--#{$tag} {
+        font-size: $size;
+    }
+}
+
+// $font-size-lead imported from './variables.scss'
+.text--lead {
+    font-size: $font-size-lead;
+}

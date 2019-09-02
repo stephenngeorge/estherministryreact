@@ -1,0 +1,11 @@
+/** 
+ * N.B.
+ * _variables.scss must be provided first so as to 
+ * be available to all other files,
+ * _base.scss, layout.scss should be last for a similar reason,
+ * they consumes all other files
+*/
+
+@import './styles/variables';
+@import './styles/typography';
+@import './styles/base';
