@@ -21,7 +21,6 @@ import defaults from './defaults'
 import './cover-image.scss'
 
 const CoverImage = props => {
-    // extract props
     const {
         additional_classes,
         alt_text,

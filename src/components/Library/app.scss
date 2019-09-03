@@ -1,9 +1,9 @@
 /** 
  * N.B.
- * _variables.scss must be provided first so as to 
+ * _variables.scss must be imported first so as to 
  * be available to all other files,
- * _base.scss, layout.scss should be last for a similar reason,
- * they consumes all other files
+ * _base.scss, layout.scss should be last for a similar reason:
+ * they consumes all other style sheets
 */
 
 @import './styles/variables';

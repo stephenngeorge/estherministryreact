@@ -19,10 +19,9 @@ import defaults from './defaults'
 
 import './hero-image.scss'
 
-import { CoverImage } from '../../atoms'
+import { CoverImage } from '../../00-atoms'
 
 const HeroImage = props => {
-    // extract props
     const {
         additional_classes,
         alt_text,
@@ -30,7 +29,6 @@ const HeroImage = props => {
         image_url
     } = props
 
-    const classes = additional_classes.join(' ')
     // warn about defaults
     if (div_height === defaults.div_height.value) console.warn(defaults.div_height.warning)
 
@@ -39,7 +37,9 @@ const HeroImage = props => {
     }
 
     return (
-        <div className={`hero-image ${classes}`} style={ divStyles }>
+        <div    className={`hero-image ${additional_classes.join(' ')}`}
+                style={ divStyles }
+        >
             <CoverImage alt_text={ alt_text }
                         file_path={ image_url }
             />
@@ -53,7 +53,7 @@ HeroImage.propTypes = {
     div_height: PropTypes.number,
     image_url: PropTypes.string.isRequired
 }
-// define default prop values
+
 HeroImage.defaultProps = {
     additional_classes: defaults.additional_classes.value,
     div_height: defaults.div_height.value

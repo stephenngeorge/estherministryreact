@@ -17,14 +17,16 @@ import PropTypes from 'prop-types'
 import defaults from './defaults'
 
 const PlainText = props => {
-    // extract props
     const {
         additional_classes,
+        paragraph_id,
         text
     } = props
 
     return (
-        <p className={ additional_classes.join(' ') }>
+        <p  className={ additional_classes.join(' ') }
+            id={ paragraph_id }
+        >
             { text }
         </p>
     )

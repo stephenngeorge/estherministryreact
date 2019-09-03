@@ -1,4 +1,35 @@
-// TYPOGRAPHY
+/*  ******
+----------
+FONTS
+----------
+******  */
+// sans-serif
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,700&display=swap');
+$font-family-sans-serif: 'Assistant', Arial, sans-serif;
+// serif
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+$font-family-serif: 'Playfair Display', Courier, serif;
+// cursive
+@import url('https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap');
+$font-family-cursive: 'Lovers Quarrel', cursive;
+
+$font-families: (
+    "sans-serif": $font-family-sans-serif,
+    "serif": $font-family-serif,
+    "cursive": $font-family-cursive
+);
+
+@each $family, $name in $font-families {
+    .font-family--#{$family} {
+        font-family: $name;
+    }
+}
+
+/*  ******
+----------
+TYPOGRAPHY
+----------
+******  */
 $font-size-base:            1rem;
 $font-size-lead:            $font-size-base * 1.25;
 $font-size-small:           $font-size-base * .8;

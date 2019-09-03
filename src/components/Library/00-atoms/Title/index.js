@@ -18,7 +18,6 @@ import PropTypes from 'prop-types'
 import defaults from './defaults'
 
 const Title = props => {
-    // extract props
     const {
         additional_classes,
         heading_id,

@@ -1,8 +1,8 @@
 // setup map for headings sizes, these styles are implemented 
-// in './base.scss'
+// in './base.scss', $font-size-base imported from './variables.scss'
 $font-sizes-headings: (
     "h1": $font-size-base * 2,
-    "h2": $font-size-base * 1.75,
+    "h2": $font-size-base * 1.8,
     "h3": $font-size-base * 1.5,
     "h4": $font-size-base * 1.3,
     "h5": $font-size-base * 1.1,
