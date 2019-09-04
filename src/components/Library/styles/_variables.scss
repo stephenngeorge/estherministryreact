@@ -19,17 +19,26 @@ $font-families: (
     "cursive": $font-family-cursive
 );
 
-@each $family, $name in $font-families {
-    .font-family--#{$family} {
-        font-family: $name;
-    }
-}
-
 /*  ******
 ----------
 TYPOGRAPHY
 ----------
 ******  */
 $font-size-base:            1rem;
-$font-size-lead:            $font-size-base * 1.25;
+$font-size-lead:            $font-size-base * 1.4;
 $font-size-small:           $font-size-base * .8;
+
+/*  ******
+----------
+COLOURS
+----------
+******  */
+$color--dark-grey: #3E403F;
+$color--green: #77ADA5;
+$color--white: #ffffff;
+
+$theme-colors: (
+    "dark-grey": $color--dark-grey,
+    "green": $color--green,
+    "white": $color--white
+);

@@ -16,7 +16,7 @@ import defaults from './defaults'
 
 import './call-to-action.scss'
 
-import { PlainText, Title } from '../../00-atoms'
+import { Button, PlainText, Title } from '../../00-atoms'
 
 const CallToAction = props => {
     const {
@@ -44,6 +44,7 @@ const CallToAction = props => {
             </div>
 
             <div className="call-to-action__button-container">
+                <Button button_text="GET IN TOUCH" />
             </div>
         </section>
     )

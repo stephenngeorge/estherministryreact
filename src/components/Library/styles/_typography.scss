@@ -20,3 +20,10 @@ $font-sizes-headings: (
 .text--lead {
     font-size: $font-size-lead;
 }
+
+// map $font-families imported from './variables.scss
+@each $family, $name in $font-families {
+    .font-family--#{$family} {
+        font-family: $name;
+    }
+}
