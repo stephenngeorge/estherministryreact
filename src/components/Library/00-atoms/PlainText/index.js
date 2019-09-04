@@ -18,14 +18,14 @@ import defaults from './defaults'
 
 const PlainText = props => {
     const {
-        additional_classes,
-        paragraph_id,
+        additionalClasses,
+        paragraphId,
         text
     } = props
 
     return (
-        <p  className={ additional_classes.join(' ') }
-            id={ paragraph_id }
+        <p  className={ additionalClasses.join(' ') }
+            id={ paragraphId }
         >
             { text }
         </p>
@@ -33,14 +33,14 @@ const PlainText = props => {
 }
 
 PlainText.propTypes = {
-    additional_classes: PropTypes.array,
-    paragraph_id: PropTypes.string,
+    additionalClasses: PropTypes.array,
+    paragraphId: PropTypes.string,
     text: PropTypes.string.isRequired
 }
 
 PlainText.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    paragraph_id: defaults.paragraph_id.value
+    additionalClasses: defaults.additionalClasses.value,
+    paragraphId: defaults.paragraphId.value
 }
 
 export default PlainText

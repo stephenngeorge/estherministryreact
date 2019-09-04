@@ -1,12 +1,12 @@
 const defaults = {
-    additional_classes: {
+    additionalClasses: {
         value: []
     },
-    alt_text: {
+    altText: {
         value: 'cover image',
         warning: 'You haven\'t provided any alt text, a default has been used. You should provide your own by passing a string to the "alt_text" prop of the CoverImage component'
     },
-    image_id: {
+    imageId: {
         value: ''
     }
 }

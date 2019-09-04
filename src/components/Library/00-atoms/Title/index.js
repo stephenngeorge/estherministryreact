@@ -19,32 +19,33 @@ import defaults from './defaults'
 
 const Title = props => {
     const {
-        additional_classes,
-        heading_id,
-        heading_level,
-        heading_text
+        additionalClasses,
+        headingId,
+        headingLevel,
+        headingText
     } = props
 
-    const TitleTag = `h${ heading_level }`
+    if (defaults.headingLevel.range.indexOf(headingLevel) < 0) console.warn(defaults.headingLevel.warning)
+    const TitleTag = `h${ headingLevel }`
     return (
-        <TitleTag   className={ additional_classes.join(' ') }
-                    id={ heading_id }>
-            { heading_text }
+        <TitleTag   className={ additionalClasses.join(' ') }
+                    id={ headingId }>
+            { headingText }
         </TitleTag>
     )
 }
 
 Title.propTypes = {
-    additional_classes: PropTypes.array,
-    heading_id: PropTypes.string,
-    heading_level: PropTypes.number,
-    heading_text: PropTypes.string.isRequired
+    additionalClasses: PropTypes.array,
+    headingId: PropTypes.string,
+    headingLevel: PropTypes.number,
+    headingText: PropTypes.string.isRequired
 }
 
 Title.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    heading_id: defaults.heading_id.value,
-    heading_level: defaults.heading_level.value
+    additionalClasses: defaults.additionalClasses.value,
+    headingId: defaults.headingId.value,
+    headingLevel: defaults.headingLevel.value
 }
 
 export default Title

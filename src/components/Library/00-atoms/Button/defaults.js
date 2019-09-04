@@ -1,31 +1,31 @@
 const defaults = {
-    additional_classes: {
+    additionalClasses: {
         value: []
     },
-    button_block: {
+    buttonBlock: {
         value: false
     },
-    button_color: {
+    buttonColor: {
         value: 'white'
     },
-    button_element: {
+    buttonElement: {
         value: 'button'
     },
-    button_id: {
+    buttonId: {
         value: ''
     },
-    button_link: {
+    buttonLink: {
         value: null,
         warning: 'You set the button element as "<a>" but did not provide a link for the href, please pass one as a string to the "button_link" prop'
     },
-    button_onClick: {
+    buttonOnClick: {
         value: null,
         warning: 'You set the button element as "<button>" but did not provide a function to handle the click, please pass one to the "button_onClick" prop'
     },
-    button_outline: {
+    buttonOutline: {
         value: false
     },
-    button_size: {
+    buttonSize: {
         value: 'reg',
         warning: 'button_size: value out of range - button size must be one of "small", "reg", "large"',
         range: ["small", "reg", "large"]

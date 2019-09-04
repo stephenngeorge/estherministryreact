@@ -1,17 +1,17 @@
 const defaults = {
-    additional_classes: {
+    additionalClasses: {
         value: []
     },
-    heading_id: {
+    headingId: {
         value: ''
     },
-    heading_level: {
+    headingLevel: {
         value: 2
     },
-    heading_text: {
+    headingText: {
         value: ''
     },
-    paragraph_id: {
+    paragraphId: {
         value: ''
     }
 }

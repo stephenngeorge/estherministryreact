@@ -1,8 +1,8 @@
 const defaults = {
-    additional_classes: {
+    additionalClasses: {
         value: []
     },
-    paragraph_id: {
+    paragraphId: {
         value: ''
     }
 }

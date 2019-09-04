@@ -1,13 +1,14 @@
 const defaults = {
-    additional_classes: {
+    additionalClasses: {
         value: []
     },
-    heading_id: {
+    headingId: {
         value: ''
     },
-    heading_level: {
+    headingLevel: {
         value: 1,
-        warning: 'You have not provided a heading level, a default has been used. To set your own, pass a number from 1-6 to the "heading_level" prop'
+        warning: 'headingLevel: value out of range - please pass a number between 1 and 6',
+        range: [1, 2, 3, 4, 5, 6]
     }
 }
 

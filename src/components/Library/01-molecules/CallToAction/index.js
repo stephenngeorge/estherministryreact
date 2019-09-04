@@ -20,51 +20,51 @@ import { Button, PlainText, Title } from '../../00-atoms'
 
 const CallToAction = props => {
     const {
-        additional_classes,
-        heading_id,
-        heading_level,
-        heading_text,
-        paragraph_id,
-        paragraph_text
+        additionalClasses,
+        headingId,
+        headingLevel,
+        headingText,
+        paragraphId,
+        paragraphText
     } = props
 
     return (
-        <section className={`call-to-action ${additional_classes.join(' ')}`}>
+        <section className={`call-to-action ${additionalClasses.join(' ')}`}>
             <div className="call-to-action__text-content">
                 {
-                    heading_text !== defaults.heading_text.value &&
-                    <Title  heading_id={ heading_id }
-                            heading_level={ heading_level }
-                            heading_text={ heading_text }
+                    headingText !== defaults.headingText.value &&
+                    <Title  headingId={ headingId }
+                            headingLevel={ headingLevel }
+                            headingText={ headingText }
                     />
                 }
-                <PlainText  paragraph_id={ paragraph_id }
-                            text={ paragraph_text }
+                <PlainText  paragraphId={ paragraphId }
+                            text={ paragraphText }
                 />
             </div>
 
             <div className="call-to-action__button-container">
-                <Button additional_classes={['font-weight--light']} button_text="GET IN TOUCH" />
+                <Button additionalClasses={['font-weight--light']} buttonText="GET IN TOUCH" />
             </div>
         </section>
     )
 }
 
 CallToAction.propTypes = {
-    additional_classes: PropTypes.array,
-    heading_id: PropTypes.string,
-    heading_level: PropTypes.number,
-    heading_text: PropTypes.string,
-    paragraph_id: PropTypes.string,
-    paragraph_text: PropTypes.string.isRequired
+    additionalClasses: PropTypes.array,
+    headingId: PropTypes.string,
+    headingLevel: PropTypes.number,
+    headingText: PropTypes.string,
+    paragraphId: PropTypes.string,
+    paragraphText: PropTypes.string.isRequired
 }
 
 CallToAction.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    heading_id: defaults.heading_id.value,
-    heading_level: defaults.heading_level.value,
-    heading_text: defaults.heading_text.value,
-    paragraph_id: defaults.paragraph_id.value
+    additionalClasses: defaults.additionalClasses.value,
+    headingId: defaults.headingId.value,
+    headingLevel: defaults.headingLevel.value,
+    headingText: defaults.headingText.value,
+    paragraphId: defaults.paragraphId.value
 }
 
 export default CallToAction

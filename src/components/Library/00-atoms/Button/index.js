@@ -22,86 +22,86 @@ import './button.scss'
 
 const Button = props => {
     const {
-        additional_classes,
-        button_block,
-        button_color,
-        button_element,
-        button_id,
-        button_link,
-        button_onClick,
-        button_outline,
-        button_size,
-        button_text
+        additionalClasses,
+        buttonBlock,
+        buttonColor,
+        buttonElement,
+        buttonId,
+        buttonLink,
+        buttonOnClick,
+        buttonOutline,
+        buttonSize,
+        buttonText
     } = props
 
     // warn about invalid props values
-    if (defaults.button_size.range.indexOf(button_size.toLowerCase().trim()) < 0) {
-        console.warn(defaults.button_size.warning)
+    if (defaults.buttonSize.range.indexOf(buttonSize.toLowerCase().trim()) < 0) {
+        console.warn(defaults.buttonSize.warning)
     }
     // set button classes based on props
-    const button_classes = {
-        base_classes: `button ${additional_classes.join(' ')} `,
-        button_color: `button--color-${button_color} `,
-        button_size: `button--size-${button_size} `
+    const buttonClasses = {
+        baseClasses: `button ${additionalClasses.join(' ')} `,
+        buttonColor: `button--color-${buttonColor} `,
+        buttonSize: `button--size-${buttonSize} `
     }
-    if (!!button_block) button_classes.button_block = 'button--block '
-    if (!!button_outline) button_classes.button_outline = `button-outline--color-${button_color}`
+    if (!!buttonBlock) buttonClasses.buttonBlock = 'button--block '
+    if (!!buttonOutline) buttonClasses.buttonOutline = `button-outline--color-${buttonColor}`
     // manipulate button_classes object into one string
     // that can be set as button.className
     let classes = ''
-    Object.keys(button_classes).forEach(key => {
-        classes += button_classes[key]
+    Object.keys(buttonClasses).forEach(key => {
+        classes += buttonClasses[key]
     })
     
     // define attributes, warn about incorrect props patterns
     let link, handleClick
-    if (button_element === 'a') {
-        if (button_link === null) console.warn(defaults.button_link.warning)
-        link = button_link   
+    if (buttonElement === 'a') {
+        if (buttonLink === null) console.warn(defaults.buttonLink.warning)
+        link = buttonLink
     }
-    if (button_element === 'button') {
-        if (button_onClick === null) console.warn(defaults.button_onClick.warning)
-        handleClick = button_onClick
+    if (buttonElement === 'button') {
+        if (buttonOnClick === null) console.warn(defaults.buttonOnClick.warning)
+        handleClick = buttonOnClick
     }
     // either href or onClick will be null, so react will not 
     // set that attribute
     const attribs = {
-        id: button_id.length > 0 ? button_id : null,
+        id: buttonId.length > 0 ? buttonId : null,
         href: link,
         onClick: handleClick
     }
 
-    const HTMLTag = button_element.trim()
+    const HTMLTag = buttonElement.trim()
     return (
         <HTMLTag {...attribs} className={classes}>
-            { button_text }
+            { buttonText }
         </HTMLTag>
     )
 }
 
 Button.propTypes = {
-    additional_classes: PropTypes.array,
-    button_block: PropTypes.bool,
-    button_color: PropTypes.string,
-    button_element: PropTypes.string,
-    button_id: PropTypes.string,
-    button_link: PropTypes.string,
-    button_onClick: PropTypes.func,
-    button_outline: PropTypes.bool,
-    button_size: PropTypes.string,
-    button_text: PropTypes.string.isRequired
+    additionalClasses: PropTypes.array,
+    buttonBlock: PropTypes.bool,
+    buttonColor: PropTypes.string,
+    buttonElement: PropTypes.string,
+    buttonId: PropTypes.string,
+    buttonLink: PropTypes.string,
+    buttonOnClick: PropTypes.func,
+    buttonOutline: PropTypes.bool,
+    buttonSize: PropTypes.string,
+    buttonText: PropTypes.string.isRequired
 }
 
 Button.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    button_block: defaults.button_block.value,
-    button_color: defaults.button_color.value,
-    button_element: defaults.button_element.value,
-    button_id: defaults.button_id.value,
-    button_link: defaults.button_link.value,
-    button_onClick: defaults.button_onClick.value,
-    button_outline: defaults.button_outline.value,
-    button_size: defaults.button_size.value
+    additionalClasses: defaults.additionalClasses.value,
+    buttonBlock: defaults.buttonBlock.value,
+    buttonColor: defaults.buttonColor.value,
+    buttonElement: defaults.buttonElement.value,
+    buttonId: defaults.buttonId.value,
+    buttonLink: defaults.buttonLink.value,
+    buttonOnClick: defaults.buttonOnClick.value,
+    buttonOutline: defaults.buttonOutline.value,
+    buttonSize: defaults.buttonSize.value
 }
 
 export default Button

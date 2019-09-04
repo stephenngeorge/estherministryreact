@@ -23,40 +23,40 @@ import { CoverImage } from '../../00-atoms'
 
 const HeroImage = props => {
     const {
-        additional_classes,
-        alt_text,
-        div_height,
-        image_url
+        additionalClasses,
+        altText,
+        divHeight,
+        imageUrl
     } = props
 
     // warn about defaults
-    if (div_height === defaults.div_height.value) console.warn(defaults.div_height.warning)
+    if (divHeight === defaults.divHeight.value) console.warn(defaults.divHeight.warning)
 
     const divStyles = {
-        height: `${ div_height.toString() }vh`
+        height: `${ divHeight.toString() }vh`
     }
 
     return (
-        <div    className={`hero-image ${additional_classes.join(' ')}`}
+        <div    className={`hero-image ${additionalClasses.join(' ')}`}
                 style={ divStyles }
         >
-            <CoverImage alt_text={ alt_text }
-                        file_path={ image_url }
+            <CoverImage altText={ altText }
+                        imageUrl={ imageUrl }
             />
         </div>
     )
 }
 
 HeroImage.propTypes = {
-    additional_classes: PropTypes.array,
-    alt_text: PropTypes.string,
-    div_height: PropTypes.number,
-    image_url: PropTypes.string.isRequired
+    additionalClasses: PropTypes.array,
+    altText: PropTypes.string,
+    divHeight: PropTypes.number,
+    imageUrl: PropTypes.string.isRequired
 }
 
 HeroImage.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    div_height: defaults.div_height.value
+    additionalClasses: defaults.additionalClasses.value,
+    divHeight: defaults.divHeight.value
 }
 
 export default HeroImage

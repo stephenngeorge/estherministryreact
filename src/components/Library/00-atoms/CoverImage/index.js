@@ -22,37 +22,37 @@ import './cover-image.scss'
 
 const CoverImage = props => {
     const {
-        additional_classes,
-        alt_text,
-        file_path,
-        image_id
+        additionalClasses,
+        altText,
+        imageUrl,
+        imageId
     } = props
 
     // warn about defaults
-    if (alt_text === defaults.alt_text.value) console.warn(defaults.alt_text.warning)
+    if (altText === defaults.altText.value) console.warn(defaults.altText.warning)
     return (
         <div className={`
-            cover-image cover-image__image-container ${additional_classes.join(' ')}
+            cover-image cover-image__image-container ${additionalClasses.join(' ')}
         `}>
-            <img    src={ file_path }
-                    alt={ alt_text }
-                    id={ image_id }
+            <img    src={ imageUrl }
+                    alt={ altText }
+                    id={ imageId }
             />
         </div>
     )
 }
 
 CoverImage.propTypes = {
-    additional_classes: PropTypes.array,
-    alt_text: PropTypes.string,
-    file_path: PropTypes.string.isRequired,
-    image_id: PropTypes.string
+    additionalClasses: PropTypes.array,
+    altText: PropTypes.string,
+    imageUrl: PropTypes.string.isRequired,
+    imageId: PropTypes.string
 }
 
 CoverImage.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    alt_text: defaults.alt_text.value,
-    image_id: defaults.image_id.value
+    additionalClasses: defaults.additionalClasses.value,
+    altText: defaults.altText.value,
+    imageId: defaults.imageId.value
 }
 
 export default CoverImage

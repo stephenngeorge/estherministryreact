@@ -19,28 +19,28 @@ import { Title, PlainText } from '../../00-atoms'
 
 const HeroText = props => {
     const {
-        additional_classes,
-        body_text,
-        heading_text
+        additionalClasses,
+        bodyText,
+        headingText
     } = props
 
     return (
-        <div className={`hero-text ${additional_classes.join(' ')}`}>
-            <Title heading_level={ 1 } heading_text={ heading_text } />
-            <PlainText text={ body_text } />
+        <div className={`hero-text ${additionalClasses.join(' ')}`}>
+            <Title headingLevel={ 1 } headingText={ headingText } />
+            <PlainText text={ bodyText } />
         </div>
     )
 }
 
 HeroText.propTypes = {
-    additional_classes: PropTypes.array,
-    body_text: PropTypes.string.isRequired,
-    heading_text: PropTypes.string
+    additionalClasses: PropTypes.array,
+    bodyText: PropTypes.string.isRequired,
+    headingText: PropTypes.string
 }
 
 HeroText.defaultProps = {
-    additional_classes: defaults.additional_classes.value,
-    heading_text: defaults.heading_text.value
+    additionalClasses: defaults.additionalClasses.value,
+    headingText: defaults.headingText.value
 }
 
 export default HeroText
