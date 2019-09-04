@@ -44,7 +44,7 @@ const CallToAction = props => {
             </div>
 
             <div className="call-to-action__button-container">
-                <Button button_text="GET IN TOUCH" />
+                <Button additional_classes={['font-weight--light']} button_text="GET IN TOUCH" />
             </div>
         </section>
     )

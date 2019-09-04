@@ -27,3 +27,10 @@ $font-sizes-headings: (
         font-family: $name;
     }
 }
+
+// map $font-weights imported from './variables.scss'
+@each $weight, $value in $font-weights {
+    .font-weight--#{$weight} {
+        font-weight: $value;
+    }
+}
