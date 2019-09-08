@@ -7,15 +7,18 @@ import RowenaImage from '../../assets/Rowena_1.jpg'
 export default () =>  {
     return (
         <div className="library-page">
-            <HeroImage  image_url={ RowenaImage }
-                        div_height={ 76 }
-                        alt_text="rowena speaking"
+            <HeroImage  altText="rowena speaking"
+                        divHeight={ 76 }
+                        imageUrl={ RowenaImage }
             />
-            <HeroText   heading_text="Esther Ministry"
-                        body_text="Some body copy here"
+            <HeroText   additionalClasses={["angled-div"]}
+                        bodyText="Some body copy here"
+                        headingText="Esther Ministry"
             />
-            <CallToAction   heading_text="Find Out More"
-                            paragraph_text="enquire about booking a course"
+            <CallToAction   buttonLink="https://google.co.uk"
+                            buttonText="GET IN TOUCH"
+                            headingText="Find Out More"
+                            paragraphText="enquire about booking a course"
             />
         </div>
     )

@@ -13,6 +13,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import './hero-text.scss'
+
 import defaults from './defaults'
 
 import { Title, PlainText } from '../../00-atoms'
@@ -25,7 +27,7 @@ const HeroText = props => {
     } = props
 
     return (
-        <div className={`hero-text ${additionalClasses.join(' ')}`}>
+        <div className={`hero-textX ${additionalClasses.join(' ')}`}>
             <Title headingLevel={ 1 } headingText={ headingText } />
             <PlainText text={ bodyText } />
         </div>

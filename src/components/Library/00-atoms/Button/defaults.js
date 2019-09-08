@@ -16,11 +16,11 @@ const defaults = {
     },
     buttonLink: {
         value: null,
-        warning: 'You set the button element as "<a>" but did not provide a link for the href, please pass one as a string to the "button_link" prop'
+        warning: 'You set the button element as "<a>" but did not provide a link for the href, please pass one as a string to the "buttonLink" prop'
     },
     buttonOnClick: {
         value: null,
-        warning: 'You set the button element as "<button>" but did not provide a function to handle the click, please pass one to the "button_onClick" prop'
+        warning: 'You set the button element as "<button>" but did not provide a function to handle the click, please pass one to the "buttonOnClick" prop'
     },
     buttonOutline: {
         value: false
