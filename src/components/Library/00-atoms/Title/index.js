@@ -28,7 +28,7 @@ const Title = props => {
     if (defaults.headingLevel.range.indexOf(headingLevel) < 0) console.warn(defaults.headingLevel.warning)
     const TitleTag = `h${ headingLevel }`
     return (
-        <TitleTag   className={ additionalClasses.join(' ') }
+        <TitleTag   className={`title ${additionalClasses.join(' ')}`}
                     id={ headingId }>
             { headingText }
         </TitleTag>

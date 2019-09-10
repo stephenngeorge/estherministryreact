@@ -14,6 +14,7 @@ export default () =>  {
             <HeroText   additionalClasses={["angled-div"]}
                         bodyText="Some body copy here"
                         headingText="Esther Ministry"
+                        variation="angled"
             />
             <CallToAction   buttonLink="https://google.co.uk"
                             buttonText="GET IN TOUCH"

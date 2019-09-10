@@ -23,13 +23,20 @@ const HeroText = props => {
     const {
         additionalClasses,
         bodyText,
-        headingText
+        headingText,
+        variation
     } = props
 
+    if (defaults.variation.range.indexOf(variation) < 0) console.warn(defaults.variation.warning)
     return (
-        <div className={`hero-textX ${additionalClasses.join(' ')}`}>
-            <Title headingLevel={ 1 } headingText={ headingText } />
-            <PlainText text={ bodyText } />
+        <div className={`hero-textBlock ${additionalClasses.join(' ')}`}>
+            <div class="content">
+                <Title  headingLevel={ 1 }
+                        headingText={ headingText }
+                        additionalClasses={['text--site-title', 'font-weight--light']}
+                />
+                <PlainText text={ bodyText } />
+            </div>
         </div>
     )
 }
@@ -37,12 +44,14 @@ const HeroText = props => {
 HeroText.propTypes = {
     additionalClasses: PropTypes.array,
     bodyText: PropTypes.string.isRequired,
-    headingText: PropTypes.string
+    headingText: PropTypes.string,
+    variation: PropTypes.string
 }
 
 HeroText.defaultProps = {
     additionalClasses: defaults.additionalClasses.value,
-    headingText: defaults.headingText.value
+    headingText: defaults.headingText.value,
+    variation: defaults.variation.value
 }
 
 export default HeroText

@@ -16,6 +16,18 @@ $font-sizes-headings: (
     }
 }
 
+$font-sizes-display: (
+    "site-title": $font-size-base * 4,
+    "page-title": $font-size-base * 3
+);
+// use map $font-sizes-display to generate classes that can 
+// force font size changes on any element
+@each $name, $size in $font-sizes-display {
+    .text--#{$name} {
+        font-size: $size;
+    }
+}
+
 // $font-size-lead imported from './variables.scss'
 .text--lead {
     font-size: $font-size-lead;
